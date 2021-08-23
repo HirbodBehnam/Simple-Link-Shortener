@@ -1,7 +1,7 @@
 package api
 
 import (
-	"RabinLink/config"
+	"UrlShortener/config"
 	"crypto/subtle"
 	"net/http"
 )

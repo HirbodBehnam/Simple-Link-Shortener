@@ -1,0 +1,5 @@
+{
+  "listen": "127.0.0.1:8080",
+  "database": "hirbod:123456@tcp(127.0.0.1:3306)/link_shortener",
+  "token": "123456abcd"
+}

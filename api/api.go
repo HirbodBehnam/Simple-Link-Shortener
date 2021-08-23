@@ -1,8 +1,8 @@
 package api
 
 import (
-	"RabinLink/database"
-	"RabinLink/util"
+	"UrlShortener/database"
+	"UrlShortener/util"
 	"database/sql"
 	"log"
 	"net/http"
@@ -43,7 +43,10 @@ func putLink(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	// Generate token
-	token := util.GenerateLinkToken()
+	token := r.URL.Query().Get("token")
+	if token == "" {
+		token = util.GenerateLinkToken()
+	}
 	link := r.URL.Query().Get("link")
 	if !util.IsUrlValid(link) {
 		w.WriteHeader(http.StatusBadRequest)

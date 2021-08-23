@@ -1,9 +1,9 @@
 package main
 
 import (
-	"RabinLink/api"
-	"RabinLink/config"
-	"RabinLink/database"
+	"UrlShortener/api"
+	"UrlShortener/config"
+	"UrlShortener/database"
 	"log"
 	"net/http"
 	"os"

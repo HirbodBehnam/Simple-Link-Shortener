@@ -1,4 +1,4 @@
-module RabinLink
+module UrlShortener
 
 go 1.17
 
